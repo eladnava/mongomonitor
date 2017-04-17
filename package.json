@@ -1,0 +1,28 @@
+{
+  "name": "mongomonitor",
+  "version": "1.0.0",
+  "description": "Constantly monitors your MongoDB replica set to keep it healthy.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eladnava/mongomonitor.git"
+  },
+  "bin": {
+    "mongomonitor": "./index.js"
+  },
+  "author": "Elad Nava",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eladnava/mongomonitor/issues"
+  },
+  "homepage": "https://github.com/eladnava/mongomonitor#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-mongodb": "^0.1.0",
+    "commander": "^2.9.0",
+    "mailgen": "^2.0.2",
+    "nodemailer": "^1.11.0",
+    "nodemailer-smtp-transport": "^1.1.0",
+    "npmlog": "^4.0.2"
+  }
+}
