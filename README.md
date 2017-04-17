@@ -102,7 +102,7 @@ Observe the terminal output for any initial errors. If no errors are emitted, yo
 Leave the tool running on a remote server by executing the following command:
 
 ```js
-mongo-monitor &
+mongomonitor &
 ```
 
 ## License
