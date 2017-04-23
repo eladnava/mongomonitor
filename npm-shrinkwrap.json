@@ -1,6 +1,6 @@
 {
   "name": "mongomonitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "co": {
       "version": "4.6.0",
