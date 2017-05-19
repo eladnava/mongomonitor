@@ -16,10 +16,12 @@ A Node.js package that constantly monitors your [MongoDB replica set](https://el
 
 When any of these conditions are not met, `mongomonitor` alerts you via e-mail or Slack so you can fix the issue ASAP.
 
-Email Preview
+### Email Preview
+
 ![Preview](https://raw.github.com/eladnava/mongomonitor/master/img/email-demo.png)
 
-Slack Preview
+### Slack Preview
+
 ![Preview](https://raw.github.com/eladnava/mongomonitor/master/img/slack-demo.png)
 
 ## Usage
