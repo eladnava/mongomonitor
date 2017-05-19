@@ -13,7 +13,7 @@ module.exports = {
         password: 'a1b2c3d4f5',
         authSource: 'admin' // The database to authenticate against
     },
-    // SMTP configuration for sending alert e-mails
+    // SMTP configuration for sending alert e-mails (delete to disable)
     smtp: {
         host: 'smtp.gmail.com',
         port: 465,
@@ -24,7 +24,7 @@ module.exports = {
         },
         address: 'username@gmail.com'
     },
-    // Slack configuration for sending alert messages through webhook
+    // Slack configuration for sending alert messages through webhook (delete to disable)
     slack: {
         channelUrl: 'https://hooks.slack.com/services/xxx/xxx/xxx',
         notifyMembers: ['john', 'sophia'] // enter slack user names here
