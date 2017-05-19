@@ -24,6 +24,11 @@ module.exports = {
         },
         address: 'username@gmail.com'
     },
+    // Slack configuration for sending alert messages through webhook
+    slack: {
+        channelUrl: 'https://hooks.slack.com/services/xxx/xxx/xxx',
+        notifyMembers: ['john', 'sophia'] // enter slack user names here
+    },
     // Name of the preferred primary member (leave blank to disable checking)
     preferredPrimaryMember: '',
     // Number of seconds to wait in between health checks

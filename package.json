@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/eladnava/mongomonitor#readme",
   "dependencies": {
+    "@slack/client": "^3.9.0",
     "co": "^4.6.0",
     "co-mongodb": "^0.1.0",
     "commander": "^2.9.0",

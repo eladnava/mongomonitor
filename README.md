@@ -14,9 +14,13 @@ A Node.js package that constantly monitors your [MongoDB replica set](https://el
 * The primary database disk utilization doesn't exceed a certain size (to avoid running out of disk space without notice)
 * The `mongod` process on each member isn't consuming too much RAM (to avoid the OS from killing the process due to low memory)
 
-When any of these conditions are not met, `mongomonitor` alerts you via e-mail so you can fix the issue ASAP:
+When any of these conditions are not met, `mongomonitor` alerts you via e-mail or Slack so you can fix the issue ASAP.
 
-![Preview](https://raw.github.com/eladnava/mongomonitor/master/img/demo.png)
+Email Preview
+![Preview](https://raw.github.com/eladnava/mongomonitor/master/img/email-demo.png)
+
+Slack Preview
+![Preview](https://raw.github.com/eladnava/mongomonitor/master/img/slack-demo.png)
 
 ## Usage
 
@@ -55,6 +59,11 @@ module.exports = {
         },
         address: 'username@gmail.com'
     },
+    // Slack configuration for sending alert messages through webhook
+    slack: {
+        channelUrl: 'https://hooks.slack.com/services/xxx/xxx/xxx',
+        notifyMembers: ['john', 'sophia'] // enter slack user names here
+     },
     // Name of the preferred primary member (leave blank to disable checking)
     preferredPrimaryMember: '',
     // Number of seconds to wait in between health checks
@@ -79,7 +88,8 @@ Modify the configuration file according to your replica set, especially the foll
 * `database` - the name of your main database
 * `members` - the hostnames of all of your replica set members
 * `auth` - the database authentication username/password
-* `smtp` - the SMTP e-mail configuration for sending alerts (using Gmail, AWS SES, etc)
+* `smtp` (optional) - the SMTP e-mail configuration for sending alerts (using Gmail, AWS SES, etc)
+* `slack` (optional) - the Slack webhook configuration for sending alert messages
 
 ---
 
