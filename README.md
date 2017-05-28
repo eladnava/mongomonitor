@@ -105,7 +105,7 @@ Check the console for SMTP errors. If there are no SMTP errors, check your confi
 
 Finally, run `mongomonitor` from the same directory as your `config.js` to actually start monitoring:
 
-```js
+```bash
 mongomonitor
 ```
 
@@ -113,9 +113,11 @@ Observe the terminal output for any initial errors. If no errors are emitted, yo
 
 Leave the tool running on a remote server by executing the following command:
 
-```js
-mongomonitor &
+```bash
+mongomonitor > /tmp/mongomonitor-out.log 2> /tmp/mongomonitor-error.log &
 ```
+
+If you want to keep your process running uninterrupted (recommended), it is advisable to use a process manager like [PM2](http://pm2.keymetrics.io/) or [forever](https://www.npmjs.com/package/forever).
 
 ## License
 
