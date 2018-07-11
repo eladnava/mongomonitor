@@ -1,6 +1,6 @@
 {
   "name": "mongomonitor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Constantly monitors your MongoDB replica set to keep it healthy.",
   "main": "index.js",
   "repository": {
