@@ -7,7 +7,7 @@ A Node.js package that constantly monitors your [MongoDB replica set](https://el
 * The minimum number of replica set members
 * The existence of a primary replica set member and at least one secondary
 * The health status of each replica set member, from the point of view of each member
-* The number of members in the replica set is odd, not even (for election voting majority)
+* The number of voting members in the replica set is odd, not even (for election voting majority)
 * The heartbeat timestamp between members is relatively low (indicating stable communication)
 * The oplog date on secondary members is relatively recent (so that they don't fall too far behind on replication)
 * The oplog length on each member is long enough to survive extended data member failures (for secondaries to catch up in case they were offline for a long period)
