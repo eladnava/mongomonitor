@@ -22,7 +22,7 @@
     "co-mongodb": "^0.1.0",
     "commander": "^2.9.0",
     "mailgen": "^2.0.2",
-    "nodemailer": "^7.0.7",
+    "nodemailer": "^8.0.4",
     "nodemailer-smtp-transport": "^1.1.0",
     "npmlog": "^4.0.2"
   }
